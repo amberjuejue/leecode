@@ -9,6 +9,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class LeecodeApplicationTests {
 
+    @Test(timeout = 100)
+    public void testTimeOut() throws InterruptedException {
+        Thread.sleep(200);
+    }
+
     @Test
     public void contextLoads() {
     }

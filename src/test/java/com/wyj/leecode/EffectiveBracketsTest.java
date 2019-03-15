@@ -1,6 +1,8 @@
 package com.wyj.leecode;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -19,6 +21,11 @@ import static org.junit.Assert.*;
  * 注意空字符串可被认为是有效字符串。
  */
 public class EffectiveBracketsTest {
+    @Before
+    public void beforeTest() {
+        System.out.println("before.......");
+    }
+
     @Test
     public void test() {
         try {
@@ -27,6 +34,11 @@ public class EffectiveBracketsTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @After
+    public void afterTest() {
+        System.out.println("after.......");
     }
 
     private boolean verify(String s) {
