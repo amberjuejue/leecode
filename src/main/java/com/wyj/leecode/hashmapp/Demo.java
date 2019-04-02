@@ -1,4 +1,4 @@
-package com.wyj.leecode.hashmap;
+package com.wyj.leecode.hashmapp;
 
 import java.util.HashMap;
 import java.util.Map;
